@@ -2,7 +2,7 @@ const path = require('path')
 module.exports = {
   version: "1.5",
   title: "Florence2",
-  description: "",
+  description: "An advanced vision foundation model from MicroSoft https://huggingface.co/spaces/gokaygokay/Florence-2",
   icon: "icon.webp",
   menu: async (kernel) => {
     let installing = await kernel.running(__dirname, "install.js")
