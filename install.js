@@ -32,8 +32,8 @@ module.exports = {
         },
         message: [
           "pip install gradio devicetorch",
-          "pip install -r requirements.txt",
           "pip install {{gpu == 'nvidia' ? 'transformers' : 'git+https://github.com/peanutcocktail/transformers.git'}}",
+          "pip install -r requirements.txt",
           "{{gpu === 'nvidia' ? 'pip install flash-attn --no-build-isolation' : ''}}"
         ]
       }
