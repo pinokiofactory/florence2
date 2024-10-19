@@ -31,7 +31,7 @@ module.exports = {
           "FLASH_ATTENTION_SKIP_CUDA_BUILD": "TRUE"
         },
         message: [
-          "pip install gradio devicetorch",
+          "pip install gradio==4.44.1 devicetorch",
           "pip install git+https://github.com/peanutcocktail/transformers.git",
           //"pip install {{gpu == 'nvidia' ? 'transformers' : 'git+https://github.com/peanutcocktail/transformers.git'}}",
           "pip install -r requirements.txt",
